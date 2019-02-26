@@ -4,18 +4,7 @@ import './App.css';
 import { withTheme } from 'styled-components';
 import styled from 'styled-components';
 import Holder from './Components/Holder';
-
-
-const Button = styled.button`
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-
-  /* Color the border and text with theme.main */
-  color: ${props => props.theme.palette.primary.main};
-  border: 2px solid ${props => props.theme.palette.primary.main};
-`;
+import Button from './Components/Button';
 
 
 class App extends Component {
@@ -24,7 +13,8 @@ class App extends Component {
     console.log(this.props)
     return (
       <div className="App">
-       <Button>hello</Button>
+        <Button name="I am a component" color="primary"></Button>
+        <Button name="Hello" color="secondary"></Button>
        <Holder/>
       </div>
     );

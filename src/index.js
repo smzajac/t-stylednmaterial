@@ -4,12 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Themed from './theme/Themed'
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-
-
-const theme = {
-    main: "hello"
-}
 
 ReactDOM.render(
     
